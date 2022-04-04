@@ -1,0 +1,36 @@
+<!doctype html>
+
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>Ultimate RPG</title>
+
+  <meta name="author" content="Ville Koskela">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+
+  <link rel="stylesheet" href="tyyli.css">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js"></script>
+</head>
+<body>
+  <div id="hahmo">
+    <div id="napit">
+      <div class="hahmoOminaisuus hahmoOminaisuus20">Voima<br><p id="voima"></p></div>
+      <div class="hahmoOminaisuus hahmoOminaisuus20">Ketteryys<br><p id="ketteryys"></p></div>
+      <div class="hahmoOminaisuus hahmoOminaisuus20">Elämä<br><p id="elama"></p></div>
+      <div class="hahmoOminaisuus hahmoOminaisuus20">Mana<br><p id="mana"></p></div>
+    </div>
+    <div id="pisteetContainer" class="hahmoOminaisuus">Pisteet<br><p id="pisteet"></p></div>
+  </div>
+  <div id="peli"></div>
+  <div id="aseet">
+    <div class="hahmoOminaisuus hahmoOminaisuus30"><span>Level</span><br><p id="leveli"></p></div>
+    <div class="hahmoOminaisuus hahmoOminaisuus30"><span id="ase"></span><br><p id="aseDam"></p></div>
+    <div class="hahmoOminaisuus hahmoOminaisuus30"><span id="loitsu"></span><br><p id="loitsuDam"></p></div>
+  </div>
+  <div id="ohje">Klikkaa voimaa, ketteryyttä, elämää ja manaa sijoittaaksesi 5 aloituspistettäsi. <br />Peli alkaa sen jälkeen</div>
+  <div id="jumpscare"><img class="kokonaytto" src="ukko.jpg"></div>
+  <script src="peli.js"></script>
+</body>
+</html>
+

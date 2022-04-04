@@ -1,0 +1,68 @@
+<!doctype html>
+
+<html lang="fi">
+<head>
+  <meta charset="utf-8">
+  <title>Ultimate RPG</title>
+
+  <meta name="author" content="Ville Koskela">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+
+  <link rel="stylesheet" href="tyyli.css">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js"></script>
+</head>
+<body>
+  <div id="topmenu">
+    <div>
+      <span id="hahmo_button" class="topmenu_button">Hahmo</span>
+      <span id="kauppa_button" class="topmenu_button">Kauppa</span>
+      <span id="asetukset_button" class="topmenu_button">Asetukset</span>
+    </div>
+    <div id="hahmomenu" class="submenu">
+      <div class="submenu_button hahmoOminaisuus20" id="voima_nappi">Voima<br><p id="voima"></p></div>
+      <div class="submenu_button hahmoOminaisuus20" id="ketteryys_nappi">Ketteryys<br><p id="ketteryys"></p></div>
+      <div class="submenu_button hahmoOminaisuus20" id="elama_nappi">Elämä<br><p id="elama"></p></div>
+      <div class="submenu_button hahmoOminaisuus20" id="mana_nappi">Mana<br><p id="mana"></p></div>
+    </div>
+    <div id="kauppamenu" class="submenu">
+      <div class="kauppamenu_button">Foo</div>
+    </div>
+    <div id="asetuksetmenu" class="submenu">
+      <div>
+        <form>
+	<select id="fonttikoko" onchange="muutaFontinKoko()">
+	  <option value="10px">extra pieni</option>
+	  <option value="12px">pieni</option>
+	  <option value="14px" selected>normaali</option>
+	  <option value="16px">suuri</option>
+	  <option value="18px">extra suuri</option>
+	</select>
+	</form>
+      </div>
+    </div>
+  </div>
+  <div id="peli"></div>
+  <div id="bottom_menu">
+    <div class="inventory">
+      <div class="inventory_div oikea">Melee ase: &nbsp;</div><div class="inventory_div vasen meleeAse"></div><br />
+      <div class="inventory_div oikea">Ranged ase: &nbsp;</div><div class="inventory_div vasen rangedAse"></div><br />
+      <div class="inventory_div oikea">Loitsu: &nbsp;</div><div class="inventory_div vasen loitsu"></div><br />
+      <div class="inventory_div oikea">Armor: &nbsp;</div><div class="inventory_div vasen armor"></div><br />
+      <div class="inventory_div oikea">Pet: &nbsp;</div><div class="inventory_div vasen pet"></div><br />
+    </div>
+    <div class="submenu_button hahmoOminaisuus30"><span>Level</span><br><p id="leveli"></p></div>
+    <div class="submenu_button hahmoOminaisuus30"><span>Kulta</span><br><p id="kulta"></p></div>
+    <div class="submenu_button hahmoOminaisuus30"><span>Pisteet</span><br><p id="pisteet"></p></div>
+  </div>
+  <div id="ohje"><p>Klikkaa voimaa, ketteryyttä, elämää ja manaa sijoittaaksesi 5 aloituspistettäsi. <br />Peli alkaa sen jälkeen.</p></div>
+  <div id="jumpscare"><img class="kokonaytto" src="ukko.jpg"></div>
+  <script src="asetukset.js"></script>
+  <script src="menu.js"></script>
+  <script src="pelaaja.js"></script>
+  <script src="vihut.js"></script>
+  <script src="taistelu.js"></script>
+  <script src="peli.js"></script>
+</body>
+</html>
+

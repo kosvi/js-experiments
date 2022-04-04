@@ -1,0 +1,218 @@
+html,body {
+  background: #00de9b;
+  margin: 0;
+  font-size: 14px;
+  font-family: sans-serif;
+}
+
+#topmenu {
+  position: fixed;
+  margin: 0;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background-color: brown;
+  text-align: center;
+  z-index: 2;
+}
+
+.topmenu_button {
+  display: inline-block;
+  width: 30%;
+  font-size: 2.8em;
+  color: black;
+  cursor: pointer;
+}
+
+.topmenu_button:hover {
+  color: white;
+}
+
+.submenu {
+  display: none;
+  width: 100%;
+  position: fixed;
+  /* top: 3em; */
+  background-color: brown;
+  color: black;
+  text-align: center;
+}
+
+.submenu_button {
+  display: inline-block;
+  border: solid 2px yellow;
+  height: 4em;
+  background-color: gray;
+  text-align: center;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 0.8em;
+  margin-bottom: 0.8em;
+  cursor: pointer;
+  color: black;
+}
+
+.hahmoOminaisuus20 {
+  width: 20%;
+}
+.hahmoOminaisuus30 {
+  width: 30%;
+}
+
+.submenu_button p {
+  margin: 0;
+  padding: 2px;
+  font-size: 1.2em;
+  font-weight: bold;
+  border: solid 2px darkred;
+  background-color: red;
+  display: inline-block;
+  width: 2.2em;
+  color: black;
+}
+
+.inventory_div {
+  display: inline-block;
+  width: 50%;
+  vertical-align: top;
+}
+
+.vasen {
+  text-align: left;
+  font-size: 1.2em;
+}
+
+.oikea {
+  text-align: right;
+  font-size: 1.5em;
+}
+
+#pisteetContainer {
+  display: none;
+}
+
+#peli {
+  display: none;
+  position: relative;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 4em;;
+  width: 100%;
+  max-width: 700px;
+  text-align: center;
+}
+
+#vihunTiedot {
+  position: absolute;
+  top: 4em;
+  left: 1em;
+  text-align: left;
+}
+
+#vihunTiedot label {
+  display: inline-block;
+  width: 4em;
+}
+#vihunTiedot button {
+  width: 4em;
+}
+
+#omatTiedot {
+  position: absolute;
+  top: 4em;
+  right: 1em;
+  text-align: right;
+}
+
+#omatTiedot button {
+  width: 4em;
+}
+
+#taisteluNapit {
+  position: relative;
+  margin-top: 10em;
+  text-align: center;
+  width: 100%;
+}
+
+#taisteluNapit button {
+  font-size: 1.5em;
+  padding: 0.2em;
+  border: solid 2px black;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+#taisteluLoki {
+  position: relative;
+  /* margin-top: 1em; */
+  text-align: left;
+  width: 100%;
+}
+
+#bottom_menu {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  border-top: solid 2px black;
+  background-color: brown;
+  text-align: center;
+  margin: 0;
+  z-index: 2;
+}
+
+#jumpscare {
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: black;
+  z-index: 3;
+  text-align: center;
+}
+
+.kokonaytto {
+  width: 50%;
+}
+
+.vihuNappi {
+  font-size: 1.5em;
+  padding: 0.5em;
+  border: solid 2px black;
+  border-radius: 10px;
+  margin-top: 1em;
+  /* width: 30%; */
+  cursor: pointer;
+}
+
+#paluuNappi {
+  font-size: 1.5em;
+  padding: 0.5em;
+  border: solid 2px black;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+#ohje {
+  position: fixed;
+  top: 15em;
+  left: 0;
+  padding: 2em;
+  width: 100%;
+  /* margin-right: auto; */
+  z-index: 3;
+  text-align: center;
+  display: block;
+}
+
+#ohje p {
+  display: inline-block;
+  background-color: black;
+  border: solid 2px white;
+  border-radius: 10px;
+  color: white;
+  padding: 2em;
+}
